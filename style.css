@@ -1,0 +1,22 @@
+* {
+	color: darkslategray;
+	background: darkgray;
+}
+
+h1 {
+	align-self: center;
+
+	color: darkslateblue;
+}
+
+p {
+	margin: 0% 20% 0% 20%;
+	column-count: 2;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
