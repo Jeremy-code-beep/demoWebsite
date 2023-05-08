@@ -1,0 +1,113 @@
+@font-face {
+  font-family: pixel;
+  src: url(pixelFont.ttf);
+}
+
+ @media (min-width: 512px) {
+  .wrapper{
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: auto;
+  }
+    
+  .gallery{
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+  }
+
+
+  .gallery__img{
+    min-width: auto;
+    min-height: 100vh;
+  }
+
+  .lil-nav{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: block;
+    grid-row-start: auto;
+  }
+  .lil-nav a{
+    margin-bottom: 10px;
+    min-height: 200px;
+    min-width: 100%;
+  }
+  .gallery::-webkit-scrollbar {
+    display: none;
+  }
+
+  .lil-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+body{
+  background-color: black;
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.lil-nav::-webkit-scrollbar {
+  display: none;
+}
+
+a.buttonLink {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: ghostwhite;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px 5px;
+    background-color: black;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+
+  a.buttonLink:hover {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #000;
+    border: 2px solid #5fcde4;
+    color: #5fcde4;
+  }
+
+
+footer {
+    background-color: #3f3f74;
+    color: #fff;
+    position: fixed;
+
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3%;
+
+    text-align: center;
+    font-size: 10px;
+    padding: 0px;
+    border-top: 2px solid #5fcde4;
+    border-left: 4px solid #5fcde4;
+    border-right: 4px solid #5fcde4;
+    box-shadow: 0px 0px 20px 5px #5fcde4;
+  }
