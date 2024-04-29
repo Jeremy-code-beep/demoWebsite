@@ -184,7 +184,7 @@
   .carousel__next {
     position: absolute;
     top: 0;
-    margin-top: 450px;
+    margin-top: 485px;
     width: 6rem;
     height: 4rem;
     border-radius: 40%;
@@ -192,11 +192,16 @@
     outline: 0;
   }
 
-  .carousel__prev:hover,
+  .carousel__prev:hover {
+    background-color: red;
+    border: 5px solid crimson;
+    color: red;
+  }
+
   .carousel__next:hover {
-    background-color: #000;
-    border: 5px solid #222;
-    color: #99e550;
+    background-color: blue;
+    border: 5px solid SlateBlue;
+    color: blue;
   }
 
   .buttonBackward{
@@ -206,7 +211,7 @@
 
   .buttonForward {
     left: 17rem;
-    color: crimson;
+    color: blue;
   }
 
   .carousel__prev{
@@ -222,7 +227,6 @@
   .buttonBackward,
   .buttonForward{
     z-index: 1;
-    background-color: #222;
     text-align: center;
     pointer-events: none;
   }
