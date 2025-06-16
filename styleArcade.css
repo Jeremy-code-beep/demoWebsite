@@ -159,6 +159,7 @@
 
   img {
     position: absolute;
+    object-fit: contain;
     left: 10px;
     width:65%;
     height: 65%;
