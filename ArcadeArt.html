@@ -121,6 +121,25 @@
   </ol>
   
 </section>
+
+<script>
+  // Enable left/right arrow key navigation
+  document.addEventListener('keydown', function (e) {
+    const currentHash = window.location.hash || '#photo1';
+    const current = document.querySelector(currentHash);
+    if (!current) return;
+
+    const prevLink = current.querySelector('.carousel__prev');
+    const nextLink = current.querySelector('.carousel__next');
+
+    if (e.key === 'ArrowLeft' && prevLink) {
+      window.location.hash = prevLink.getAttribute('href');
+    } else if (e.key === 'ArrowRight' && nextLink) {
+      window.location.hash = nextLink.getAttribute('href');
+    }
+  });
+</script>
+      
       </main>
     <footer>
       <p>&copy; 2023 Web Development Midterm</p>
